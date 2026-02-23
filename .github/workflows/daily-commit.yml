@@ -2,9 +2,8 @@ name: Daily Automated Commit
 
 on:
   schedule:
-    # Runs every day at 05:30 UTC (you can change time but NOT use wildcards)
+    # Runs every day at 05:30 UTC (specific time, no wildcards)
     - cron: "30 5 * * *"
-  workflow_dispatch:
 
 jobs:
   auto-commit:
